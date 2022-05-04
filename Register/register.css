@@ -3,9 +3,11 @@
   src: url(../fonts/font.woff2);
 }
 
+
 body{
-font-family: myfont;
-}
+    background: #562F93;
+  }
+
 
 
 
@@ -93,8 +95,10 @@ button:hover {
 
 #title{
   
-      align-self: center;
-      padding-left: 10px;
+  align-self: center;
+  padding-left: 10px;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
 } 
 
 #Account{
@@ -104,30 +108,28 @@ button:hover {
 }
 
 
-.account{
+.account {
+  height: 50px;
+  width: 120px;
 
-height: 50px;
-width: 130px;
-
-align-self:center;
-background: transparent;
-border: 2px solid lightgray;
-color: #2f73d8;
-border-radius: 5px;
+  align-self: center;
+  background: #FD9003;
+  border: 2px solid lightgray;
+  color: white;
+  border-radius: 5px;
 }
 
-.SubmitAD{
 
-  height: 55px;
-  width: 125px;
-  
-  align-self:center;
-  background: transparent;
+
+.SubmitAD {
+  height: 50px;
+  width: 120px;
+
+  align-self: center;
+  background: #6500D4;
   border: 2px solid lightgray;
-  color: #ff8300;
+  color: white;
   border-radius: 5px;
-
-
 }
 
 
