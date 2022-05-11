@@ -252,12 +252,12 @@ db.collection("Ads")
     function deleteAdd(id,a){
 
 
-        /* db.collection("Ads").doc(id).delete().then(function() {
+         db.collection("Ads").doc(id).delete().then(function() {
             console.log("Document successfully deleted!");
         }).catch(function(error) {
             console.error("Error removing document: ", error);
         });
-         */
+         
 
         var result = confirm("Are you sure to delete this item?");
         if (result) {
@@ -446,7 +446,7 @@ db.collection("Ads")
               
                 /* getting Room Messages */
 
-                /* db.collection('rooms').doc(doc.id).collection('Message').get()
+                 db.collection('rooms').doc(doc.id).collection('Message').get()
                .then(function(querySnapshot) {
                    querySnapshot.forEach(function(doc) {
                        // doc.data() is never undefined for query doc snapshots
@@ -457,12 +457,12 @@ db.collection("Ads")
                })
                .catch(function(error) {
                    console.log("Error getting documents: ", error);
-               });  */
+               });  
 
                 /* Getting Room Messages */
 
             
-            /* else{
+            else{
                 
                 var messageRef = db.collection('rooms').add
                
@@ -499,7 +499,7 @@ db.collection("Ads")
                   console.error("Error adding document: ", error);
               }); 
         
-            } */
+            } 
 
 
 
@@ -579,7 +579,6 @@ var FavId=localStorage.getItem("userId");
                         city:doc.data().city,
                         img:doc.data().img,
                         FavPersonID:FavId,
-                        price:doc.data().price,
                         AdId:id
                     } 
                     
@@ -601,7 +600,7 @@ var FavId=localStorage.getItem("userId");
                 city:doc.data().city,
                 img:doc.data().img,
                 FavPersonID:FavId,
-                price:doc.data().price,
+ 
                 AdId:id
              })
              .then(function(docRef) {

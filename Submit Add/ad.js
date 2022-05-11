@@ -67,8 +67,7 @@ function submitAd(){
     var number= document.getElementById("Number").value;
     var city= document.getElementById("city").value
     var error =document.getElementById("error")
-    var price=document.getElementById("price").value
-    error.innerHTML="Please Fill All Feilds"
+    error.innerHTML="Por favor, preencha todos os campos"
 
     /* Get Element End  */
 
@@ -76,10 +75,10 @@ function submitAd(){
     /* Error On Html */
         error.innerHTML=""
 
-        if(AdTitle=="" || AdDescription=="" || number=="" || Category==""|| city==""||price=="" ){
+        if(AdTitle=="" || AdDescription=="" || number=="" || Category==""|| city==""){
 
             error.style.display="block"
-            error.innerHTML="Please Fill All Feilds"
+            error.innerHTML="Por favor, preencha todos os campos"
         }
 
 
@@ -141,7 +140,7 @@ function submitAd(){
             city,
             img,
             userId,
-            price
+            
 
 
         })
