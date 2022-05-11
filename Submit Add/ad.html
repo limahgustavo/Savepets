@@ -24,72 +24,67 @@
         <div class="header">
     
             <a href="../index.html"><img src="../Images/logo.png" height="100px" width="100px"></a>
-            <h3 id="title">Pakistan Largest Market Place</h3>
+            <h3 id="title">Adote, Doe e Ame! Savepets</h3>
             
-            <button class="account" onclick="window.location='../My account/account.html'">My Account</button>
-            <button class="SubmitAD" onclick="window.location='ad.html'">Submit An Ad</button>
-            <button class="SubmitAD" onclick="logout()">Logout</button>
+            <button class="account" onclick="window.location='../My account/account.html'">Conta</button>
+            <button class="SubmitAD" onclick="window.location='ad.html'">Anúncie</button>
+            <button class="SubmitAD" onclick="logout()">Sair</button>
         </div>
 
         <hr>
       
-        <h3 id="title2">Submit An Ad</h3>
+        <h3 id="title2">Envie um anúncio</h3>
 
         
 
         <div class="AdFormMain container ">
                  
               <div class="form-group col-md-12 col-sm-12">
-                  <label for="adTitle">Ad Title</label>
+                  <label for="adTitle">Título</label>
                   <input type="text" class="form-control" id="adTitle" required> 
                 </div>
 
                 <div class="form-group col-md-12">
-                    <label for="Category">Category</label>
+                    <label for="Category">Categorias</label>
                     <select id="Category" class="form-control" required>
-                      <option selected value="">Select Category</option>
-                      <option value="Mobiles">Mobiles</option>
-                      <option value="Cars">Cars</option>
-                      <option value="Bikes">Bikes</option>
-                      <option value="Furniture">Furniture</option>
-                      <option value="Kids">Kids</option>
-                      <option value="Animals">Animals</option>
+                      <option selected value="">Selecione uma Categoria</option>
+                      <option value="Mobiles">Cachorro</option>
+                      <option value="Cars">Gato</option>
+                     
 
                     </select>
                   </div>
 
                   <div class="form-group col-md-12">
-                      <label for="AdDescription">Ad Description</label>
-                      <textarea class="form-control" placeholder="Include the brand, model, age and any included accessories." id="AdDescription" required></textarea>
+                      <label for="AdDescription">Descrição do Anúncio</label>
+                      <textarea class="form-control" placeholder="Inclua a marca, modelo, idade e quaisquer acessórios incluídos." id="AdDescription" required></textarea>
                   </div>
                   <div class="form-group col-md-12 ">
                       <div class="form-group ">
-                      <label for="UploadImage">Upload Photos</label>
+                      <label for="UploadImage">Anexar fotos</label>
                       <input type="file" class="form-control-file" id="UploadImage" required>
                     </div>
 
-                    <div class="form-group">
-                        <label for="Number">Price</label>
+                    <!-- <div class="form-group">
+                        <label for="Number"></label>
                         <input type="number" class="form-control" id="price" required> 
-                      </div>
+                      </div> -->
 
                       <div class="form-group">
-                          <label for="Name">Name</label>
+                          <label for="Name">Nome</label>
                           <input type="text" class="form-control" id="Name" required>
                         </div>
 
                         <div class="form-group">
-                            <label for="Number">Number</label>
-                            <input type="number" class="form-control" id="Number" required> 
+                            <label for="Number">Número</label>
+                            <input type="tel" class="form-control" id="Number" required> 
                           </div>
 
                           <div class="form-group">
-                              <label for="city">City</label>
+                              <label for="city">Cidade</label>
                               <select id="city" class="form-control" required>
-                                <option selected  value="">Choose City</option>
-                                <option value="Karachi">Karachi</option>
-                                <option value="Lahore">Lahore</option>
-                                <option value="Islamabad">Islamabad</option>
+                                <option selected  value="">Manaus</option>
+                               
                               </select>
                             </div>
                            
@@ -98,9 +93,9 @@
                             </p>
                             <p>
                               
-                                    By clicking 'Submit' you confirm that you have carefully read and understood all the facts, statements and conditions stated in the Terms of Use & Posting Rules of our website to which you unconditionally agree and accept as true and correct and constituting a binding agreement between us.  
+                              Ao clicar em 'Enviar' você confirma que leu e entendeu cuidadosamente todos os fatos, declarações e condições declarados nos Termos de Uso e Regras de Publicação do nosso site com os quais você concorda e aceita incondicionalmente como verdadeiros e corretos e constituindo um acordo vinculativo entre nós.  
                             </p>
-                    <button type="button" class="btn btn-primary mb-2" onclick="submitAd()">Submit Ad</button>
+                    <button type="button" class="btn btn-primary mb-2" onclick="submitAd()">Anúncie</button>
 
                   
          

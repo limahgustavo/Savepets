@@ -1,4 +1,4 @@
-<?php //Conexão com o Banco de Dados
+<!-- <?php //Conexão com o Banco de Dados
 $connect = tmysqli_connet("localhost", "root", "");
 $db = mysqli_select_db("$connect", "savepets")
 ?>
@@ -11,4 +11,4 @@ $query = mysqli_query($db, $sql) or die ("Erro na query do banco de dados=" .mys
 while($resultado = mysqli_fetch_assoc($query)){
 
 echo $resultado['usunome'];
-?>
+?> -->

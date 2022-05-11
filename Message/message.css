@@ -5,7 +5,7 @@
 
 body{
 	font-family: myfont;
-  Background: #562F93;
+  
 }
 
 
@@ -34,26 +34,34 @@ body{
 
 .account{
 
-height: 50px;
-width: 120px;
+  height: 50px;
+  width: 120px;
+  
+  align-self:center;
+  background: #562F93;
+  border: 2px solid lightgray;
+  color: #ff8300;
+  border-radius: 5px;
+}
 
-align-self:center;
-background: transparent;
-border: 2px solid lightgray;
-color: #2f73d8;
-border-radius: 5px;
+.account:hover{
+  border: 4px solid lightgray;
+}
+
+.SubmitAD:hover{
+  border: 4px solid lightgray;
 }
 
 .SubmitAD{
 
-    height: 50px;
-    width: 120px;
-    
-    align-self:center;
-    background: transparent;
-    border: 2px solid lightgray;
-    color: #ff8300;
-    border-radius: 5px;
+  height: 50px;
+  width: 120px;
+  
+  align-self:center;
+  background: #562F93;
+  border: 2px solid lightgray;
+  color: #ff8300;
+  border-radius: 5px;
 
 
 }

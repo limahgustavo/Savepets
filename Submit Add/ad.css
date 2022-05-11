@@ -5,7 +5,7 @@
 
 body{
 font-family: myfont;
-background: #562F93;
+
 }
 
 /* Header Start */
@@ -25,38 +25,44 @@ background: #562F93;
   } 
   
   #Account{
-  
+
     height: 100px;
     width:100px
   }
   
   
-  .account{
-  
-  height: 50px;
-  width: 120px;
-  
-  align-self:center;
-  background: transparent;
-  border: 2px solid lightgray;
-  color: #2f73d8;
-  border-radius: 5px;
-  }
-  
-  .SubmitAD{
-  
+  .account {
     height: 50px;
     width: 120px;
-    
-    align-self:center;
-    background: transparent;
+  
+    align-self: center;
+    background: #FD9003;
     border: 2px solid lightgray;
-    color: #ff8300;
+    color: white;
     border-radius: 5px;
-  
-  
   }
   
+  
+  
+  .SubmitAD {
+    height: 50px;
+    width: 120px;
+  
+    align-self: center;
+    background: #6500D4;
+    border: 2px solid lightgray;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .account:hover{
+    border: 4px solid lightgray;
+  }
+  
+  .SubmitAD:hover{
+    border: 4px solid lightgray;
+  }
+
   #SignInTitle{
     text-align: center;
 }
