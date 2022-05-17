@@ -7,6 +7,7 @@
     <title>Savepets</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
+
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -31,50 +32,49 @@
 
 </head>
 <body onload="showAddOnload()">
-   <body>
+  </body
+
     <div class="Main">
 
-<div class="header" id="myHeader">
+<div class="header" id="myHeader" style = "background-color:#562F93;">
 
-        <a href="index.html" id="img"><img src="Images/logo.png" height="100px" width="100px"></a>
+        <a href="index.html" id="img"><img src="Images/logo-22.png" height="100px" width="100px" style = "background-color:#562F93;"></a>
         <h3 id="title">Adote, Doe e Ame! Savepets</h3>
     
-    <button class="account" onclick="window.location='My account/account.html'">Conta</button>
-    <button class="SubmitAD" onclick="window.location='Submit Add/ad.html'">Anúncie</button>
+    <button class="account" onclick="window.location='My account/account.html'">My Account</button>
+    <button class="SubmitAD" onclick="window.location='Submit Add/ad.html'">Submit An Ad</button>
 
 
 </div>
 
 
- 
 <div class="SearchDiv container jumbotron">
-
         <div class="searchTab">
-        <input type="search" id="txtSearch" placeholder="Pesquisar"  style="border:none">
+        <input type="search" id="txtSearch" placeholder="Pesquisar" style="border:none">
         <img src="Images/search.png" onclick="searchAds()" id="searchImg">
     </div>
 
 </div>
 <div class="titleDiv">
-        <h1 class="heading container" id="heading"  data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Categoris<img src="Images/dropdown.png" id="dropdown"></h1>
+        <h1 class="heading container" id="heading"  data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Categorias<img src="Images/dropdown.png" id="dropdown"></h1>
 </div>
 
 <div class="container categories" id="catogries">
         <div class="collapse collapse in" id="collapseExample" >
             <div>
                 <ul class="catogriesRow">
-
-                        <li>
-                                <a onclick="window.location='Submit Add/ad.html'"><img src="Images/logo.png" alt=""></a>Adicione
-                        </li>
-    
+ 
                     <li>
-                        <a onclick="searchbike()"><img src="Images/bike.png" alt=""></a>Cachorro
+                        <a onclick="searchdogs()"><img src="Images/dog.png" alt=""></a>Cachorro
                     </li>
-                    <li >
-                         <a onclick="searchCars()"><img src="Images/car.png" alt=""></a>Gato
+
+                    <li>
+                         <a onclick="searchcats()"><img src="Images/cat.png" alt=""></a>Gato
                     </li>
-                    
+
+                    <li>
+                        <a onclick="window.location='Submit Add/ad.html'"><img src="Images/other.png" alt=""></a>Outros
+                    </li>
                     
                 </ul>
     
@@ -85,7 +85,7 @@
     </div>
 
 <div class="titleDiv">
-<h1 class="heading container" id="headingAds" > Adote</h1>
+<h1 class="heading container" id="headingAds" > Ads</h1>
 </div>
 
 <div class="allAds" id="allAds">
@@ -93,9 +93,9 @@
     
 
 
-    <div id="offlineMessage" > 
-        <h2>Ver seus anúncios off-line</h2>
-        <button  class="btn btn-danger" onclick="window.location.href='My account/account.html'">Visualizar anúncios off-line</button>
+    <div id="offlineMessage" style="display: none;"> 
+        <h2>View Your Offline Ads</h2>
+        <button  class="btn btn-danger" onclick="window.location.href='My account/account.html'">View Offline Ads</button>
 
     </div>
 </div>
@@ -122,39 +122,12 @@
 <div class="alert-messages text-center">
 </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- BootStarp -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.js"></script>
 
 
-    Firebase
+    <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
@@ -162,20 +135,25 @@
 
 
 
-    <script src="https://www.gstatic.com/firebasejs/5.2.0/firebase.js"></script>
-    <script>
-      // Initialize Firebase
-      var config = {
-        apiKey: "AIzaSyDEsL6stJ4-PQ2LV-rzvzWFGHHxmhSqVDs",
-        authDomain: "pakistan-olx-1.firebaseapp.com",
-        databaseURL: "https://pakistan-olx-1.firebaseio.com",
-        projectId: "pakistan-olx-1",
-        storageBucket: "pakistan-olx-1.appspot.com",
-        messagingSenderId: "719427536807"
-      };
-      firebase.initializeApp(config);
-    </script>
+    <script type="module">
+       
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.7.0/firebase-analytics.js";
+       
+        const firebaseConfig = {
+          apiKey: "AIzaSyCj1zfXcVC4JjfM3akQ3c8qcxHoXcK1iu0",
+          authDomain: "savepets-fa1fa.firebaseapp.com",
+          projectId: "savepets-fa1fa",
+          storageBucket: "savepets-fa1fa.appspot.com",
+          messagingSenderId: "538677579966",
+          appId: "1:538677579966:web:40df234d4714d1555b8eef",
+          measurementId: "G-FFLK19RHTQ"
+        };
+      
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
 
-    <script src="app.js"></script>
+    <script src="../app.js"></script>
 </body>
 </html>

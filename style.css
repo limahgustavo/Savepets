@@ -43,7 +43,7 @@ body{
 
 
     .searchTab {
-
+      
     border: 3px solid white;
     border-radius: 50px;
     width: 400px;
@@ -73,16 +73,18 @@ body{
 
 .searchTab input:focus {
     outline:none;
+    
 }
 
 
 #searchImg:hover{
-
+    
     cursor: pointer;
 }
 
 #title{
-    
+        font-weight: bold;
+        color: white;
         align-self: center;
         padding-left: 10px;
 } 
